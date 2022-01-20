@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>图片墙</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="../css/show.css">
+    <link rel="icon" href="../images/bg4.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/style_uni.css">
+    <script src="../js/jquery-3.4.0.min.js"></script>
+  </head>
+
+  <body style="background:url(../images/Backp3.png) ;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="../html/login.html">登录树屋</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">关于</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Selfintroduction.html">自我介绍</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/Hobby.html">我的书架</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/showimages.html">照片墙</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/homedown.html">家乡</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/Knowledgesummary.html">项目总结</a>
+            </li>
+          </ul>
+          </ul>
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="fab fa-facebook-f light-green-text-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="fab fa-twitter light-green-text-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="fab fa-instagram light-green-text-2"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="button" type="button">
+      <img src="../images/plus.svg" class="button_img">
+    </div>
+    <div><br><br><br><br><br></div>
+    <input class="button_hidden" id="upload" accept="image/gif, image/jpeg, image/x-png" type="file">
+    <div class="outside_block">
+      <div class="title_block">
+        <h1 class="title">Photo Wall</h1>
+      </div>
+
+      <div class="photo_block">
+        <img id="img_1" src="../images/1.jpg">
+        <img id="img_2" src="../images/2.jpg">
+        <img id="img_3" src="../images/3.jpg">
+        <img id="img_4" src="../images/4.jpg">
+        <img id="img_5" src="../images/5.jpg">
+        <img id="img_6" src="../images/6.jpg">
+        <img id="img_7" src="../images/7.jpg">
+        <img id="img_8" src="../images/8.jpg">
+        <img id="img_9" src="../images/9.jpg">
+        <img id="img_10" src="../images/10.jpg">
+        <img id="img_11" src="../images/11.jpg">
+        <img id="img_12" src="../images/12.jpg">
+      </div>
+
+      <div class="bottom_block">
+        <span>点击图片可以查看大图，点击加号可以添加图片</br></span>
+      </div>
+    </div>
+
+    <div class="big">
+      <div class="inner">
+        <img id="big_img" src="" />
+        <button class="delete">删除</button>
+        <button class="replace">替换</button>
+        <input class="replace_hidden" id="replace" accept="image/gif, image/jpeg, image/x-png" type="file">
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../js/show.js"></script>
+  </body>
+
+
+</html>

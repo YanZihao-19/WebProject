@@ -1,0 +1,115 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+	height: 100%;
+	width: 100%;
+	background-size:cover ;
+}
+
+
+.novel{
+    width: 850px;
+    margin:100px auto;
+ }
+
+ .novel h1{
+ 	padding-bottom: 10px;
+ 	border-bottom: #3F6580 solid 1px;
+ 	text-align: center;
+ }
+
+ .novel ul{
+ 	margin-top: 100px;
+ }
+
+ .novel ul li{
+    float:left; /*向右浮动*/
+    list-style:none;
+    width: 100px;  /*每个图书初始宽度*/
+    transition:all .8s; /*transition过渡标签,后者为渐变总时长*/
+    position:relative;
+    overflow:hidden;
+    border-left:1px solid rgba(255,255,255,.8);
+    border-left-width:2px;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.8);
+ }
+
+.novel ul li .image_title{
+     position:absolute;/*绝对定位，固定在对应图片位置上*/
+     width:100%;
+     height:20px;
+      background-color:rgba(0,0,0,.5);
+     font-size: x-small;
+      line-height:20px;
+      bottom:0px;
+      left:0;
+      text-transform: uppercase;
+ }
+.novel ul li .image_title a{
+    color:#fff;
+    text-decoration:none;
+}
+.novel ul:hover li{
+   width: 120px;   /*伪类：变化后每个li的宽度*/
+  }
+.novel ul li:hover{
+   width: 150px;   /*伪类：变化后ul增加的宽度*/
+  }
+
+
+
+/*列传样式*/
+.biography{
+    width: 850px;
+    margin:100px auto;
+   margin-top: 500px;
+ }
+.biography h1{
+	padding-bottom: 10px;
+ 	border-bottom: #3F6580 solid 1px;
+ 	
+ 	text-align: center;
+ 	
+ 	
+ }
+.biography ul{
+ 	margin-top: 100px;   
+ 
+ }
+.biography ul li{
+    float:left;
+    list-style:none;
+   width: 100px;
+    transition:all .8s;
+    position:relative;
+    overflow:hidden;
+    border-left:1px solid rgba(255,255,255,.8);
+   border-left-width:2px;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.8);
+    margin-bottom: 300px;
+ }
+.biography ul li .image_title{
+     position:absolute;
+     width:100%;
+     height:20px;
+      background-color:rgba(0,0,0,.5);
+     font-size: x-small;
+      line-height:20px;
+      bottom:0px;
+      left:0;
+      text-transform: uppercase;
+ }
+.biography ul li .image_title a{
+    color:#fff;
+    text-decoration:none;
+}
+.biography ul:hover li{
+   width: 120px;
+
+  }
+.biography ul li:hover{
+   width: 150px;
+
+  }

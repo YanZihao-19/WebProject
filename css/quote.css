@@ -1,0 +1,78 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	height: 100%;
+	width: 100%;
+	background-size:cover ;
+}
+.title{
+	width: 900px;
+	margin: auto;
+	margin-top: 100px;
+}
+.title h1{
+	text-align: center;
+	padding-bottom: 10px;
+ 	border-bottom: #3F6580 solid 1px;
+}
+
+.container{
+	width: 900px;
+	align-content: center;
+	margin: auto;
+	margin-top:100px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/*初始属性*/
+.container .box{
+	position: relative;
+	width: 200px;
+	height: 250px;
+	background: white;
+	padding: 50px 20px 20px;
+	box-shadow: 0 15px 45px rgba(0,0,0,.1);
+	transform: translateY(20px);
+	transition: .5s;
+}
+
+/*伪类改变的属性*/
+.container .box:hover{
+	background:url(../images/bg4.jpg);
+	background-size: cover;
+	transform: translateY(0px);
+}
+
+.container .box p{
+    height: 150px;
+	line-height: 150%;
+	font-family: sans-serif;
+	font-weight: 200;
+}
+/*伪类改变的属性*/
+.container .box:hover p{
+	font-weight: 400;
+}
+
+.container .box a{
+	text-decoration: none;
+}
+.container .box a i{
+	color: white;
+}
+/*伪类改变的属性*/
+.container .box:hover a i{
+	color: black;
+	font-size:20px;
+	font-weight: 700;
+	margin-left: 13px;
+	padding-right: 30px;
+}
+/*伪类改变的属性*/
+.container .box:hover a i:hover{
+	color: #3F6580;
+}
